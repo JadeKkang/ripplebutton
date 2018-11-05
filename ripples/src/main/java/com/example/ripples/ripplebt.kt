@@ -48,6 +48,9 @@ class ripplebt : TextView {
         }
     }
 
+    /**
+     * 开始遮罩绘制
+     */
     private fun start() {
         canvasType = false
         isStart=false;
@@ -78,8 +81,6 @@ class ripplebt : TextView {
         return super.onTouchEvent(event)
     }
 
-
-
     override fun draw(canvas: Canvas?) {
         super.draw(canvas)
         if (!canvasType) {
@@ -87,9 +88,12 @@ class ripplebt : TextView {
             canvas!!.drawCircle(dX, dY, circleR, pait)
         }
     }
+
+    /**
+     * 监听函数
+     */
     fun setOnclick(click: OnClick){
         this.click=click;
-//        this.click!!.onClick(this);
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
