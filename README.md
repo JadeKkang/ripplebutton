@@ -3,31 +3,32 @@
 # 效果展示
 ![](https://github.com/JadeKkang/ripplebutton/blob/master/image/ripple.gif)
 # 使用
-1.在项目gradle中添加<br>  
-allprojects {<br> 
-repositories {<br> 
-...<br> 
-maven { url 'https://jitpack.io' }<br> 
-}<br> 
-}<br> 
-2.添加依赖<br> 
- {implementation 'com.github.JadeKkang:ripplebutton:v1.0'}<br> 
-3.xml中使用<br>  
-<com.example.ripples.ripplebt<br> 
-        android:id="@+id/bt"<br> 
-        android:layout_width="match_parent"<br> 
-        android:background="@color/colorAccent"<br> 
-        android:gravity="center"<br> 
-        android:text="点我呀"<br> 
-        android:textSize="18sp"<br> 
-        android:textColor="#ffffff"<br> 
-        android:layout_marginLeft="20dp"<br> 
-        android:layout_marginRight="20dp"<br> 
-        android:layout_marginTop="20dp"<br> 
-        android:layout_height="50dp" /><br> 
+    1.在项目gradle中添加
+    allprojects {
+        repositories {
+             ...
+           maven { url 'https://jitpack.io' } 
+        } 
+    }
+    2.添加依赖
+     {
+       implementation 'com.github.JadeKkang:ripplebutton:v1.0'
+     }
+    3.xml中使用<br>  
+       <com.example.ripples.ripplebt
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent" 
+        android:gravity="center"
+        android:text="点我呀"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp" />
 # 自定义属性
 | 属性 | 值 | 描述 | 
-| ------------- |:-------------:| -----:| 
 | circleColor |#26000000| 点击之后涟漪背景颜色 |  
 # 点击回调
 
