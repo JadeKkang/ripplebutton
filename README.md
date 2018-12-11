@@ -12,7 +12,7 @@
     }
     2.添加依赖
      {
-       implementation 'com.github.JadeKkang:ripplebutton:v1.0'
+       implementation 'com.github.JadeKkang:ripplebutton:v1.0.1'
      }
     3.xml中使用<br>  
        <com.example.ripples.ripplebt
